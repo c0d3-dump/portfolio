@@ -36,10 +36,6 @@ watch(scrollerRef, () => {
 });
 
 function scrollToPosition(position: number) {
-  console.log(position);
-
-  console.log(scrollTrigger.end);
-
   scrollTrigger.scroller.scroll({
     top: scrollTrigger.end * position,
     behavior: "smooth",
