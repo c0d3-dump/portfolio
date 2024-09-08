@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, shallowRef, watch, defineEmits } from "vue";
+import { ref, shallowRef, watch } from "vue";
 import gsap from "gsap";
 import Technologies from "./components/Technologies.vue";
 import Experience from "./components/Experience.vue";

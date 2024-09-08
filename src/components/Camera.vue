@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { shallowRef, watch } from "vue";
 import gsap from "gsap";
-import { OrbitControls } from "@tresjs/cientos";
 
 const camRef = shallowRef();
 
@@ -97,8 +96,6 @@ watch(props, (v) => {
     :position="[0, 3, 4.5]"
     :look-at="[1, -0.8, 0]"
   />
-
-  <!-- <OrbitControls /> -->
 </template>
 
 <style scoped></style>

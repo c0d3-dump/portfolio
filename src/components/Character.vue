@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { shallowRef, watch, defineProps } from "vue";
+import { shallowRef, watch } from "vue";
 import { useGLTF, useAnimations } from "@tresjs/cientos";
 import gsap from "gsap";
 
