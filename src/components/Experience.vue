@@ -39,7 +39,7 @@ async function onSubmit() {
       <div
         class="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-black"
       ></div>
-      <time class="mb-1 text-xs font-semibold leading-none text-gray-200">{{
+      <time class="mb-1 text-xs font-semibold leading-none text-gray-50">{{
         item.time
       }}</time>
       <h3 class="text-base font-bold text-white">
@@ -49,7 +49,8 @@ async function onSubmit() {
         {{ item.description }}
       </p>
     </li>
-    <li class="mb-6 ms-4">
+
+    <li class="ms-4">
       <div
         class="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-black"
       ></div>

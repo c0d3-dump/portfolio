@@ -48,7 +48,7 @@ function scrollToPosition(position: number) {
 <template>
   <div id="scroller" ref="scrollerRef">
     <TresCanvas
-      clear-color="#FFDF22"
+      clear-color="#efd856"
       window-size
       preset="realistic"
       power-preference="high-performance"
