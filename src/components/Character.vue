@@ -17,7 +17,7 @@ animationAction.play();
 animationAction.paused = true;
 
 const characterRef = shallowRef();
-const sections = 4;
+const sections = 3;
 const characterPosTimeline = gsap.timeline({
   defaults: { ease: "none" },
 });
@@ -44,12 +44,6 @@ watch(characterRef, () => {
     y: 0.166,
     z: 1.23,
     duration: 1 / sections / 2,
-  });
-  characterPosTimeline.to(characterRef.value.position, {
-    x: 0.94,
-    y: 0.166,
-    z: 1.23,
-    duration: 1 / sections,
   });
   characterPosTimeline.to(characterRef.value.position, {
     x: 0.44,
@@ -87,12 +81,6 @@ watch(characterRef, () => {
   });
   characterRotTimeline.to(characterRef.value.rotation, {
     x: 0,
-    y: 0.8,
-    z: 0,
-    duration: 1 / sections,
-  });
-  characterRotTimeline.to(characterRef.value.rotation, {
-    x: 0,
     y: 2.59,
     z: 0,
     duration: 1 / sections,
@@ -118,7 +106,7 @@ function animate(seek: number) {
   characterRotTimeline.seek(seek);
 
   const duration = animationAction.getClip().duration;
-  const targetTime = duration * ((seek * 4) % 1);
+  const targetTime = duration * ((seek * sections) % 1);
 
   animationAction.time = targetTime;
   mixer.update(0);

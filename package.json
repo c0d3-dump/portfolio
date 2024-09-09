@@ -15,10 +15,9 @@
     "@tresjs/cientos": "^4.0.2",
     "@tresjs/core": "^4.2.9",
     "gsap": "^3.12.5",
-    "resend": "^4.0.0",
     "three": "^0.168.0",
     "vue": "^3.4.29",
-    "vue-router": "^4.4.3"
+    "vue3-carousel": "^0.3.3"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import "vue3-carousel/dist/carousel.css";
 import { TresCanvas } from "@tresjs/core";
 import { ref, shallowRef, watch } from "vue";
 import gsap from "gsap";
@@ -7,6 +8,7 @@ import Scene from "./components/Scene.vue";
 import Character from "./components/Character.vue";
 import Camera from "./components/Camera.vue";
 import TextContent from "./TextContent.vue";
+import Footer from "./components/Footer.vue";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -75,15 +77,17 @@ function scrollToPosition(position: number) {
       <TresAmbientLight :intensity="0.2" />
     </TresCanvas>
 
+    <Footer :seek-value="seekValue" @scroll-to-position="scrollToPosition" />
+
     <TextContent
       :seek-value="seekValue.valueOf()"
-      @scroll-to-position="scrollToPosition"
+      @scroll-to-position="(pos) => scrollToPosition(pos)"
     />
   </div>
 </template>
 
 <style scoped>
 #scroller {
-  height: 1000%;
+  height: 300%;
 }
 </style>

@@ -4,13 +4,13 @@ import { sendMessage } from "../supabase";
 
 const items = [
   {
-    time: "Sep 2024 - Present",
-    title: "SDE-II (Argusoft)",
+    time: "June 2022 - Sep 2024",
+    title: "SDE-I (Argusoft)",
     description: "",
   },
   {
-    time: "June 2022 - Sep 2024",
-    title: "SDE-I (Argusoft)",
+    time: "Sep 2024 - Present",
+    title: "SDE-II (Argusoft)",
     description: "",
   },
 ];
@@ -33,9 +33,23 @@ async function onSubmit() {
 
 <template>
   <ol
-    class="border-s border-gray-200 absolute bottom-0 w-full md:w-1/2 lg:w-1/3 bg-black bg-opacity-20 p-3 rounded-tr-md"
+    class="border-s border-gray-200 absolute top-0 w-full md:w-1/2 lg:w-1/3 bg-black bg-opacity-20 p-3 rounded-tr-md"
   >
-    <li class="mb-10 ms-4">
+    <li class="mb-6 ms-4" v-for="item in items">
+      <div
+        class="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-black"
+      ></div>
+      <time class="mb-1 text-xs font-semibold leading-none text-gray-200">{{
+        item.time
+      }}</time>
+      <h3 class="text-base font-bold text-white">
+        {{ item.title }}
+      </h3>
+      <p class="text-base font-normal text-gray-100">
+        {{ item.description }}
+      </p>
+    </li>
+    <li class="mb-6 ms-4">
       <div
         class="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-black"
       ></div>
@@ -65,20 +79,6 @@ async function onSubmit() {
           Submit
         </button>
       </div>
-    </li>
-    <li class="mb-10 ms-4" v-for="item in items">
-      <div
-        class="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-black"
-      ></div>
-      <time class="mb-1 text-xs font-semibold leading-none text-gray-200">{{
-        item.time
-      }}</time>
-      <h3 class="text-base font-bold text-white">
-        {{ item.title }}
-      </h3>
-      <p class="text-base font-normal text-gray-100">
-        {{ item.description }}
-      </p>
     </li>
   </ol>
 </template>
