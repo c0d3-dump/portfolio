@@ -9,8 +9,13 @@ const items = [
     description: "",
   },
   {
-    time: "Sep 2024 - Present",
+    time: "Sep 2024 - Feb 2025",
     title: "SDE-II (Argusoft)",
+    description: "",
+  },
+  {
+    time: "Sep 2025 - Present",
+    title: "SDE-II (IntelXlabs)",
     description: "",
   },
 ];
@@ -33,11 +38,11 @@ async function onSubmit() {
 
 <template>
   <ol
-    class="border-s border-gray-200 absolute top-0 w-full md:w-1/2 lg:w-1/3 bg-black bg-opacity-20 p-3 rounded-tr-md"
+    class="border-s border-gray-200 absolute top-2 left-4 w-full md:w-1/2 lg:w-1/3 bg-black bg-opacity-30 p-3 rounded-tr-md"
   >
     <li class="mb-6 ms-4" v-for="item in items">
       <div
-        class="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-black"
+        class="absolute w-3 h-3 bg-black rounded-full mt-2 -start-1.5 border border-black"
       ></div>
       <time class="mb-1 text-xs font-semibold leading-none text-gray-50">{{
         item.time

@@ -42,10 +42,10 @@ const items = [
 </script>
 
 <template>
-  <div class="base max-w-screen-lg h-full m-auto mt-16">
+  <div class="base max-w-screen-lg fixed left-1/2 -translate-x-1/2 top-1/2 -translate-y-2/3">
     <div class="grids">
-      <div v-for="item in items" class="bg-white bg-opacity-80">
-        <span class="hover:opacity-30 w-full h-full">
+      <div v-for="item in items" class="bg-white bg-opacity-40 hover:bg-purple-400 hover:opacity-85">
+        <span class=" hover:bg-pink-400 w-full h-full">
           <img
             :src="item"
             alt="img"

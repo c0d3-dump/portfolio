@@ -39,7 +39,7 @@ const projects = [
 
 <template>
   <div class="m-auto h-[86%] w-full md:w-1/2">
-    <Carousel :autoplay="5000" :wrap-around="true">
+    <!-- <Carousel :autoplay="5000" :wrap-around="true">
       <Slide v-for="project in projects" :key="project.name">
         <div class="bg-black bg-opacity-20 h-[86%] w-full block align-middle">
           <img
@@ -61,7 +61,7 @@ const projects = [
       <template #addons>
         <Navigation />
       </template>
-    </Carousel>
+    </Carousel> -->
   </div>
 </template>
 

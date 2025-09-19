@@ -55,10 +55,10 @@ watch(props, (v) => {
 
 <template>
   <div
-    class="fixed container pointer-events-none left-1/2 -translate-x-1/2"
+    class="fixed container pointer-events-none left-0 top-0"
     ref="baseRef"
   >
-    <div id="first" class="mt-24 text-center pointer-events-auto">
+    <div id="first" class="mt-36 text-center pointer-events-auto fixed left-1/2 -translate-x-1/2">
       <span class="font-medium text-2xl text-white">Hi, I am Bhavin 👋</span>
       <br />
       <span class="font-bold text-4xl text-white"

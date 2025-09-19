@@ -70,7 +70,7 @@ function scrollToPosition(position: number) {
         :position="[3, 3, 3]"
         intentity="1"
         color="#FFDF22"
-        decay="1"
+        :decay=1
         cast-shadow
       />
 
@@ -81,7 +81,7 @@ function scrollToPosition(position: number) {
 
     <TextContent
       :seek-value="seekValue.valueOf()"
-      @scroll-to-position="(pos) => scrollToPosition(pos)"
+      @scroll-to-position="(pos: number) => scrollToPosition(pos)"
     />
   </div>
 </template>
@@ -89,5 +89,6 @@ function scrollToPosition(position: number) {
 <style scoped>
 #scroller {
   height: 300%;
+  /* overflow-x: hidden; */
 }
 </style>
