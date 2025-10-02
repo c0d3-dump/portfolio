@@ -9,7 +9,6 @@ import Character from "./components/Character.vue";
 import Camera from "./components/Camera.vue";
 import TextContent from "./TextContent.vue";
 import Footer from "./components/Footer.vue";
-import { Analytics } from "@vercel/analytics/vue";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,7 +46,6 @@ function scrollToPosition(position: number) {
 </script>
 
 <template>
-  <Analytics />
   <div id="scroller" ref="scrollerRef">
     <TresCanvas
       clear-color="#efd856"
