@@ -14,6 +14,7 @@
     "@supabase/supabase-js": "^2.45.3",
     "@tresjs/cientos": "^4.0.2",
     "@tresjs/core": "^4.2.9",
+    "@vercel/analytics": "^1.5.0",
     "gsap": "^3.12.5",
     "three": "^0.168.0",
     "vue": "^3.4.29",
