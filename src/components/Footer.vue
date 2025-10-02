@@ -39,8 +39,8 @@ function onMenuClicked(page: string) {
 
 <template>
   <div class="fixed w-full bottom-0 z-50">
-    <div class="hidden sm:block mx-8 my-4">
-      <nav class="flex justify-between align-middle -mb-5">
+    <div class="hidden sm:block mx-8 my-8">
+      <nav class="flex justify-between align-middle -mb-[26px]">
         <div v-for="option in menuOptions" class="block">
           <span
             class="text-white font-semibold text-md absolute -top-3 w-[114px] text-center -translate-x-[41px]"
@@ -57,7 +57,7 @@ function onMenuClicked(page: string) {
         </div>
       </nav>
 
-      <div class="bg-gray-200 rounded-full h-2.5 dark:bg-gray-800">
+      <div class="bg-gray-200 rounded-full h-2.5 dark:bg-gray-800 px-2">
         <div
           class="bg-white h-2.5 rounded-full"
           :style="'width: ' + props.seekValue * 100 + '%'"
